@@ -1,0 +1,39 @@
+EE569 Homework Assignment #1 Prob1a1
+Date: February 4, 2018
+Name : Manasa Manohara
+ID : 3722587777
+email : manasama@usc.edu
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SYSTEM CONFIGURATION IN WHICH THIS CODE RAN:
+
+OS: Mac OS High Sierra 64-bit
+
+Software: CLion
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS TO DEBUG CODE:
+
+1. Open Command prompt.
+
+2. Run this command in the project folder:
+mkdir build; cd build; cmake ..; make
+
+
+3.You should see the program executable named - ColorToGray_HW_1_1 in this build folder
+
+4.ColorToGray_HW_1_1 executable should be run with these arguments:
+program_name = ./ColorToGray_HW_1_1
+<program_name> <input_image>.raw <output_image>.raw <ImgWidth> <ImgHeight> <BytesPerPixel><lightImg.raw> <averageImg.raw> <LuminosityImg.raw>
+
+where;
+program_name: 	the name of the .exe file generated
+input_image: 	the name of the .raw file along with path to be taken as input for processing
+output_image: 	the name of the .raw file along with path to which the processesed image is saved
+ImgWidth: 	Width of the image
+ImgHeight: 	Height of the image
+BytesPerPixel: 	bytes per pixel (for RGB = 3 and for GRAY = 1)
+lightImg.raw :  the name of the .raw file along with path to be outputted after lightness method processing
+averageImg.raw: the name of the .raw file along with path to be outputted after average method processing
+LuminosityImg.raw:  the name of the .raw file along with path to be outputted after luminosity method processing
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example that works for me:
+./ColorToGray_HW_1_1 /Users/mansi/Documents/imageProcessing/images/HW_1/p2/Desk.raw 400 300 3 /Users/mansi/Documents/imageProcessing/images/HW_1/p2/DeskLum.raw /Users/mansi/Documents/imageProcessing/images/HW_1/p2/DeskAvg.raw /Users/mansi/Documents/imageProcessing/images/HW_1/p2/DeskLight.raw

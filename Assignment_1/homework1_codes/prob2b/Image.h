@@ -1,0 +1,28 @@
+
+#ifndef IMAGEPROCESSINGXHW_1CMD_NOISE_IMAGE_H
+#define IMAGEPROCESSINGXHW_1CMD_NOISE_IMAGE_H
+
+#include <memory.h>
+#include <string>
+
+class Image {
+public:
+    Image(int width, int height, int numChannels);
+    void allocate();
+    void deallocate();
+    void print_image(const std::string& fileName, Image* outputImg);
+    virtual ~Image();
+
+    size_t getNumOfBytes();
+
+    int width;
+    int height;
+    int numChannels;
+
+    unsigned char* data;
+    std::string name;
+
+};
+
+
+#endif //IMAGEPROCESSINGXHW_1CMD_NOISE_IMAGE_H

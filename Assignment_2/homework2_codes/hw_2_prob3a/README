@@ -1,0 +1,35 @@
+EE569 Homework Assignment #2 Prob3a
+Date: February 4, 2018
+Name : Manasa Manohara
+ID : 3722587777
+email : manasama@usc.edu
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SYSTEM CONFIGURATION IN WHICH THIS CODE RAN:
+
+OS: Mac OS High Sierra 64-bit
+
+Software: CLion
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS TO DEBUG CODE:
+
+1. Open Command prompt.
+
+2. Run this command in the project folder:
+    mkdir build; cd build; cmake ..; make
+
+3. You should see the program executable named - ./hw_2_prob3 in this build folder
+
+4. ./hw_2_prob3 executable should be run with these arguments:
+program_name ./hw_2_prob3
+
+<program_name> <input_image>.raw  <ImgWidth> <ImgHeight> <BytesPerPixel> <Outputfirststage.raw> <OutputSecondstage.raw> 
+
+where;
+program_name: 	the name of the .exe file generated
+input_image: 	the name of the .raw file along with path to be taken as original input for processing
+output_image: 	the name of the .raw file along with path to which the processesed image is saved
+ImgWidth: 	Width of the image
+ImgHeight: 	Height of the image
+BytesPerPixel: 	bytes per pixel (for RGB = 3 and for GRAY = 1)
+Outputfirststage.raw : output after first stage of shrinking
+OutputSecondstage.raw : output after second stage of shrinking
